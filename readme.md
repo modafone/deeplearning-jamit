@@ -14,7 +14,7 @@ Windows10 64bitへインストールしたときの方法です．Windowsの他のバージョンでも同様
 
 Visual Studio 2013 or 2010をインストールする．（2015では多分動きません）Visual studioが無い場合は，無料のVisual Studio 2013 communityをインストールしても良いです．
 
-CUDAをダウンロードしインストールする 
+CUDAをダウンロードしインストールする  
 <https://developer.nvidia.com/cuda-toolkit-archive>
 * バックエンドにTensorFlowを使う場合CUDA 8.0選択
 * バックエンドにTheanoを使う場合CUDA 7.5を選択
@@ -39,16 +39,24 @@ conda create -n py35 python=3.5
 ```bash
 activate py35
 ```
+
 必要なパッケージのインストールを行う
 ```bash
 conda install numpy scipy mingw libpython spyder
 ```
-*バックエンドにTheanoを使う場合は*インストールする
+
+*バックエンドにTensorFlowを使う場合は* インストールする
+```bash
+pip install tensorflow-gpu
+```
+*バックエンドにTensorFlowを使う場合は* NVIDIAのサイトからcuDNN v6.0 for CUDA 8.0をダウンロードし，bin,include,lib内のファイルをCUDAインストール先ディレクトリ（おそらくC:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0）にコピーする．cuDNNのダウンロードには会員登録が必要．  
+<https://developer.nvidia.com/cudnn>
+
+*バックエンドにTheanoを使う場合は* インストールする
 ```bash
 conda install theano
 ```
-
-バックエンドにTheanoを使う場合には，Theanoの設定ファイルを作る．C:\Users\（ユーザ名）\に「.theanorc.txt」というファイル名のテキストファイルを作成し，以下の内容を書いてください．  
+*バックエンドにTheanoを使う場合は* Theanoの設定ファイルを作る．C:\Users\（ユーザ名）\に「.theanorc.txt」というファイル名のテキストファイルを作成し，以下の内容を書いてください．  
 「#」で始まる行はコメントアウトの意味です．  
 PCのGPU搭載有無によってdeviceの値を変更してください．  
 cuDNNを入れた場合はoptimizer_includingのコメントアウトを外してください．現在TheanoがサポートするcuDNNはv5.1までなのでこれより新しいものは入れないでください．  
