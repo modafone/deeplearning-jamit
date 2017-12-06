@@ -75,14 +75,26 @@ compiler_bindir=C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin
 fastmath = True
 ```
 
-Kerasのインストールを行う．
+Kerasのインストールを行う
 ```bash
 pip install keras
 ```
 
-ソースコード実行に必要なものをインストールする．
+ソースコード実行に必要なものをインストールする
 ```bash
 pip install scikit-learn matplotlib pyyaml h5py pillow
 conda install --channel https://conda.anaconda.org/menpo opencv3
 ```
 
+Kerasを使ったコードを何か1回実行する
+```bash
+python keras_cnn_imageclassify.py
+```
+実行後にC:\Users\（ユーザ名）\.keras\keras.jsonをテキストエディタで開き，バックエンドの指定を書く．
+```bash
+"backend": "tensorflow"
+```
+または
+```bash
+"backend": "theano"
+```
