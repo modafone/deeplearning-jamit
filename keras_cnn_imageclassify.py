@@ -135,7 +135,7 @@ print(model.summary())
 #学習
 start = time.time()  # 処理時間の計測開始
 training = model.fit(data_train, label_train_binary,
-                     epochs=10, batch_size=10, verbose=1)
+                     epochs=50, batch_size=100, verbose=1)
 training_time = time.time() - start
 
 
