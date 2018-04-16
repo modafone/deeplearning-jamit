@@ -1,66 +1,66 @@
-# MITŽ‘æ36Šª2†“ÁWuKeras‚É‚æ‚éƒfƒB[ƒvƒ‰[ƒjƒ“ƒOvŠÖ˜Aƒtƒ@ƒCƒ‹
+ï»¿# æ—¥æœ¬åŒ»ç”¨ç”»åƒå·¥å­¦ä¼š Medical Imaging Technology (MIT) èªŒç¬¬36å·»2å·ç‰¹é›†ã€ŒKerasã«ã‚ˆã‚‹ãƒ‡ã‚£ãƒ¼ãƒ—ãƒ©ãƒ¼ãƒ‹ãƒ³ã‚°ã€é–¢é€£ãƒ•ã‚¡ã‚¤ãƒ«
 
-## 2D‰æ‘œ2ƒNƒ‰ƒX•ª—Þƒ\[ƒXƒR[ƒh
+## 2Dç”»åƒ2ã‚¯ãƒ©ã‚¹åˆ†é¡žã‚½ãƒ¼ã‚¹ã‚³ãƒ¼ãƒ‰
 
 keras_cnn_imageclassify.py
 
-## ƒTƒ“ƒvƒ‹ƒf[ƒ^
+## ã‚µãƒ³ãƒ—ãƒ«ãƒ‡ãƒ¼ã‚¿
 
-—pˆÓ‚·‚é‚©‚à‚µ‚ê‚È‚¢
+ç”¨æ„ã™ã‚‹ã‹ã‚‚ã—ã‚Œãªã„
 
-## Windows‚Ö‚ÌKerasƒCƒ“ƒXƒg[ƒ‹•û–@
+## Windowsã¸ã®Kerasã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«æ–¹æ³•
 
-Windows10 64bit‚ÖƒCƒ“ƒXƒg[ƒ‹‚µ‚½‚Æ‚«‚Ì•û–@‚Å‚·DWindows‚Ì‘¼‚Ìƒo[ƒWƒ‡ƒ“‚Å‚à“¯—l‚¾‚ÆŽv‚¢‚Ü‚·D
+Windows10 64bitã¸ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã—ãŸã¨ãã®æ–¹æ³•ã§ã™ï¼ŽWindowsã®ä»–ã®ãƒãƒ¼ã‚¸ãƒ§ãƒ³ã§ã‚‚åŒæ§˜ã ã¨æ€ã„ã¾ã™ï¼Ž
 
-Visual Studio 2013 or 2010‚ðƒCƒ“ƒXƒg[ƒ‹‚·‚éDi2015‚Å‚Í‘½•ª“®‚«‚Ü‚¹‚ñjVisual studio‚ª–³‚¢ê‡‚ÍC–³—¿‚ÌVisual Studio 2013 community‚ðƒCƒ“ƒXƒg[ƒ‹‚µ‚Ä‚à—Ç‚¢‚Å‚·D
+Visual Studio 2013 or 2010ã‚’ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã™ã‚‹ï¼Žï¼ˆ2015ã§ã¯å‹•ã‹ãªã„ã‹ã‚‚ï¼‰Visual studioãŒç„¡ã„å ´åˆã¯ï¼Œç„¡æ–™ã®Visual Studio 2013 communityã‚’ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã—ã¦ã‚‚è‰¯ã„ã§ã™ï¼Ž
 
-CUDA‚ðƒ_ƒEƒ“ƒ[ƒh‚µƒCƒ“ƒXƒg[ƒ‹‚·‚é  
+CUDAã‚’ãƒ€ã‚¦ãƒ³ãƒ­ãƒ¼ãƒ‰ã—ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã™ã‚‹  
 <https://developer.nvidia.com/cuda-toolkit-archive>
-* ƒoƒbƒNƒGƒ“ƒh‚ÉTensorFlow‚ðŽg‚¤ê‡CUDA 8.0‘I‘ð
-* ƒoƒbƒNƒGƒ“ƒh‚ÉTheano‚ðŽg‚¤ê‡CUDA 7.5‚ð‘I‘ð
+* ãƒãƒƒã‚¯ã‚¨ãƒ³ãƒ‰ã«TensorFlowã‚’ä½¿ã†å ´åˆCUDA 8.0é¸æŠž
+* ãƒãƒƒã‚¯ã‚¨ãƒ³ãƒ‰ã«Theanoã‚’ä½¿ã†å ´åˆCUDA 7.5ã‚’é¸æŠž
 
-Git for Windows‚ðƒ_ƒEƒ“ƒ[ƒh‚µƒCƒ“ƒXƒg[ƒ‹‚·‚é  
+Git for Windowsã‚’ãƒ€ã‚¦ãƒ³ãƒ­ãƒ¼ãƒ‰ã—ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã™ã‚‹  
 <http://msysgit.github.io/>
 
-AnacondaiPython3.6 versionC64-bit installerj‚ðƒ_ƒEƒ“ƒ[ƒh‚µƒCƒ“ƒXƒg[ƒ‹‚·‚é  
+Anacondaï¼ˆPython3.6 versionï¼Œ64-bit installerï¼‰ã‚’ãƒ€ã‚¦ãƒ³ãƒ­ãƒ¼ãƒ‰ã—ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã™ã‚‹  
 <https://www.anaconda.com/download/>
 
-ƒXƒ^[ƒgƒƒjƒ…[‚ÌAnaconda3ƒOƒ‹[ƒv‚É‚ ‚éAnaconda Prompt‚ðŠÇ—ŽÒŒ ŒÀ‚Å‹N“®‚·‚éDˆÈ‰º‚Å‚Í‚±‚Ìƒvƒƒ“ƒvƒg‚É“ü—Í‚·‚éD  
-ƒAƒbƒvƒf[ƒg‚·‚éD
+ã‚¹ã‚¿ãƒ¼ãƒˆãƒ¡ãƒ‹ãƒ¥ãƒ¼ã®Anaconda3ã‚°ãƒ«ãƒ¼ãƒ—ã«ã‚ã‚‹Anaconda Promptã‚’ç®¡ç†è€…æ¨©é™ã§èµ·å‹•ã™ã‚‹ï¼Žä»¥ä¸‹ã§ã¯ã“ã®ãƒ—ãƒ­ãƒ³ãƒ—ãƒˆã«å…¥åŠ›ã™ã‚‹ï¼Ž  
+ã‚¢ãƒƒãƒ—ãƒ‡ãƒ¼ãƒˆã™ã‚‹ï¼Ž
 ```bash
 conda update conda
 ```
 
-Python3.6‚ªŠÜ‚Ü‚ê‚½Anaconda‚ðƒCƒ“ƒXƒg[ƒ‹‚µ‚½‚ªCŒã‚ÅŽg‚¤opencv3‚ÍŒ»ÝPython3.5‚Ü‚Å‚µ‚©‘Î‰ž‚µ‚È‚¢‚Ì‚ÅPyton3.5‚Ì‰¼‘zŠÂ‹«‚ðì‚éD
+Python3.6ãŒå«ã¾ã‚ŒãŸAnacondaã‚’ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã—ãŸãŒï¼Œå¾Œã§ä½¿ã†opencv3ã¯ç¾åœ¨Python3.5ã¾ã§ã—ã‹å¯¾å¿œã—ãªã„ã®ã§Pyton3.5ã®ä»®æƒ³ç’°å¢ƒã‚’ä½œã‚‹ï¼Ž
 ```bash
 conda create -n py35 python=3.5
 ```
-ì¬‚µ‚½‰¼‘zŠÂ‹«‚ð—LŒø‚É‚·‚éD‚±‚ÌƒRƒ}ƒ“ƒh‚ÍAnaconda Prompt‚ð‹N“®‚·‚é‚½‚Ñ‚É“ü—Í‚·‚éDi‹N“®‚·‚é‚½‚Ñ‚É“ü—Í‚·‚é‚Ì‚ð–Y‚ê‚¸‚ÉIj
+ä½œæˆã—ãŸä»®æƒ³ç’°å¢ƒã‚’æœ‰åŠ¹ã«ã™ã‚‹ï¼Žã“ã®ã‚³ãƒžãƒ³ãƒ‰ã¯Anaconda Promptã‚’èµ·å‹•ã™ã‚‹ãŸã³ã«å…¥åŠ›ã™ã‚‹ï¼Žï¼ˆèµ·å‹•ã™ã‚‹ãŸã³ã«å…¥åŠ›ã™ã‚‹ã®ã‚’å¿˜ã‚Œãšã«ï¼ï¼‰
 ```bash
 activate py35
 ```
 
-•K—v‚ÈƒpƒbƒP[ƒW‚ÌƒCƒ“ƒXƒg[ƒ‹‚ðs‚¤
+å¿…è¦ãªãƒ‘ãƒƒã‚±ãƒ¼ã‚¸ã®ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã‚’è¡Œã†
 ```bash
 conda install numpy scipy mingw libpython spyder
 ```
 
-*ƒoƒbƒNƒGƒ“ƒh‚ÉTensorFlow‚ðŽg‚¤ê‡‚Í* ƒCƒ“ƒXƒg[ƒ‹‚·‚é
+*ãƒãƒƒã‚¯ã‚¨ãƒ³ãƒ‰ã«TensorFlowã‚’ä½¿ã†å ´åˆã¯* ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã™ã‚‹
 ```bash
 pip install tensorflow-gpu
 ```
-*ƒoƒbƒNƒGƒ“ƒh‚ÉTensorFlow‚ðŽg‚¤ê‡‚Í* NVIDIA‚ÌƒTƒCƒg‚©‚çcuDNN v6.0 for CUDA 8.0‚ðƒ_ƒEƒ“ƒ[ƒh‚µCbin,include,lib“à‚Ìƒtƒ@ƒCƒ‹‚ðCUDAƒCƒ“ƒXƒg[ƒ‹æƒfƒBƒŒƒNƒgƒŠi‚¨‚»‚ç‚­C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0j‚ÉƒRƒs[‚·‚éDcuDNN‚Ìƒ_ƒEƒ“ƒ[ƒh‚É‚Í‰ïˆõ“o˜^‚ª•K—vD  
+*ãƒãƒƒã‚¯ã‚¨ãƒ³ãƒ‰ã«TensorFlowã‚’ä½¿ã†å ´åˆã¯* NVIDIAã®ã‚µã‚¤ãƒˆã‹ã‚‰cuDNN v6.0 for CUDA 8.0ã‚’ãƒ€ã‚¦ãƒ³ãƒ­ãƒ¼ãƒ‰ã—ï¼Œbin,include,libå†…ã®ãƒ•ã‚¡ã‚¤ãƒ«ã‚’CUDAã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«å…ˆãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªï¼ˆãŠãã‚‰ãC:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0ï¼‰ã«ã‚³ãƒ”ãƒ¼ã™ã‚‹ï¼ŽcuDNNã®ãƒ€ã‚¦ãƒ³ãƒ­ãƒ¼ãƒ‰ã«ã¯ä¼šå“¡ç™»éŒ²ãŒå¿…è¦ï¼Ž  
 <https://developer.nvidia.com/cudnn>
 
-*ƒoƒbƒNƒGƒ“ƒh‚ÉTheano‚ðŽg‚¤ê‡‚Í* ƒCƒ“ƒXƒg[ƒ‹‚·‚é
+*ãƒãƒƒã‚¯ã‚¨ãƒ³ãƒ‰ã«Theanoã‚’ä½¿ã†å ´åˆã¯* ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã™ã‚‹
 ```bash
 conda install theano
 ```
-*ƒoƒbƒNƒGƒ“ƒh‚ÉTheano‚ðŽg‚¤ê‡‚Í* Theano‚ÌÝ’èƒtƒ@ƒCƒ‹‚ðì‚éDC:\Users\iƒ†[ƒU–¼j\‚Éu.theanorc.txtv‚Æ‚¢‚¤ƒtƒ@ƒCƒ‹–¼‚ÌƒeƒLƒXƒgƒtƒ@ƒCƒ‹‚ðì¬‚µCˆÈ‰º‚Ì“à—e‚ð‘‚¢‚Ä‚­‚¾‚³‚¢D  
-u#v‚ÅŽn‚Ü‚és‚ÍƒRƒƒ“ƒgƒAƒEƒg‚ÌˆÓ–¡‚Å‚·D  
-PC‚ÌGPU“‹Ú—L–³‚É‚æ‚Á‚Ädevice‚Ì’l‚ð•ÏX‚µ‚Ä‚­‚¾‚³‚¢D  
-cuDNN‚ð“ü‚ê‚½ê‡‚Íoptimizer_including‚ÌƒRƒƒ“ƒgƒAƒEƒg‚ðŠO‚µ‚Ä‚­‚¾‚³‚¢DŒ»ÝTheano‚ªƒTƒ|[ƒg‚·‚écuDNN‚Ív5.1‚Ü‚Å‚È‚Ì‚Å‚±‚ê‚æ‚èV‚µ‚¢‚à‚Ì‚Í“ü‚ê‚È‚¢‚Å‚­‚¾‚³‚¢D  
-Visual Studio‚Ìƒo[ƒWƒ‡ƒ“‚É‚æ‚Á‚Äcompiler_bindir‚ÌƒfƒBƒŒƒNƒgƒŠ‚ð•ÏX‚µ‚Ä‚­‚¾‚³‚¢D
+*ãƒãƒƒã‚¯ã‚¨ãƒ³ãƒ‰ã«Theanoã‚’ä½¿ã†å ´åˆã¯* Theanoã®è¨­å®šãƒ•ã‚¡ã‚¤ãƒ«ã‚’ä½œã‚‹ï¼ŽC:\Users\ï¼ˆãƒ¦ãƒ¼ã‚¶åï¼‰\ã«ã€Œ.theanorc.txtã€ã¨ã„ã†ãƒ•ã‚¡ã‚¤ãƒ«åã®ãƒ†ã‚­ã‚¹ãƒˆãƒ•ã‚¡ã‚¤ãƒ«ã‚’ä½œæˆã—ï¼Œä»¥ä¸‹ã®å†…å®¹ã‚’æ›¸ã„ã¦ãã ã•ã„ï¼Ž  
+ã€Œ#ã€ã§å§‹ã¾ã‚‹è¡Œã¯ã‚³ãƒ¡ãƒ³ãƒˆã‚¢ã‚¦ãƒˆã®æ„å‘³ã§ã™ï¼Ž  
+PCã®GPUæ­è¼‰æœ‰ç„¡ã«ã‚ˆã£ã¦deviceã®å€¤ã‚’å¤‰æ›´ã—ã¦ãã ã•ã„ï¼Ž  
+cuDNNã‚’å…¥ã‚ŒãŸå ´åˆã¯optimizer_includingã®ã‚³ãƒ¡ãƒ³ãƒˆã‚¢ã‚¦ãƒˆã‚’å¤–ã—ã¦ãã ã•ã„ï¼Žç¾åœ¨TheanoãŒã‚µãƒãƒ¼ãƒˆã™ã‚‹cuDNNã¯v5.1ã¾ã§ãªã®ã§ã“ã‚Œã‚ˆã‚Šæ–°ã—ã„ã‚‚ã®ã¯å…¥ã‚Œãªã„ã§ãã ã•ã„ï¼Ž  
+Visual Studioã®ãƒãƒ¼ã‚¸ãƒ§ãƒ³ã«ã‚ˆã£ã¦compiler_bindirã®ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªã‚’å¤‰æ›´ã—ã¦ãã ã•ã„ï¼Ž
 ```bash
 [global]
 device = cpu
@@ -75,26 +75,26 @@ compiler_bindir=C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin
 fastmath = True
 ```
 
-Keras‚ÌƒCƒ“ƒXƒg[ƒ‹‚ðs‚¤
+Kerasã®ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã‚’è¡Œã†
 ```bash
 pip install keras
 ```
 
-ƒ\[ƒXƒR[ƒhŽÀs‚É•K—v‚È‚à‚Ì‚ðƒCƒ“ƒXƒg[ƒ‹‚·‚é
+ã‚½ãƒ¼ã‚¹ã‚³ãƒ¼ãƒ‰å®Ÿè¡Œã«å¿…è¦ãªã‚‚ã®ã‚’ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã™ã‚‹
 ```bash
 pip install scikit-learn matplotlib pyyaml h5py pillow
 conda install --channel https://conda.anaconda.org/menpo opencv3
 ```
 
-Keras‚ðŽg‚Á‚½ƒR[ƒh‚ð‰½‚©1‰ñŽÀs‚·‚é
+Kerasã‚’ä½¿ã£ãŸã‚³ãƒ¼ãƒ‰ã‚’ä½•ã‹1å›žå®Ÿè¡Œã™ã‚‹
 ```bash
 python keras_cnn_imageclassify.py
 ```
-ŽÀsŒã‚ÉC:\Users\iƒ†[ƒU–¼j\.keras\keras.json‚ðƒeƒLƒXƒgƒGƒfƒBƒ^‚ÅŠJ‚«CƒoƒbƒNƒGƒ“ƒh‚ÌŽw’è‚ð‘‚­D
+å®Ÿè¡Œå¾Œã«C:\Users\ï¼ˆãƒ¦ãƒ¼ã‚¶åï¼‰\.keras\keras.jsonã‚’ãƒ†ã‚­ã‚¹ãƒˆã‚¨ãƒ‡ã‚£ã‚¿ã§é–‹ãï¼Œãƒãƒƒã‚¯ã‚¨ãƒ³ãƒ‰ã®æŒ‡å®šã‚’æ›¸ãï¼Ž
 ```bash
 "backend": "tensorflow"
 ```
-‚Ü‚½‚Í
+ã¾ãŸã¯
 ```bash
 "backend": "theano"
 ```
