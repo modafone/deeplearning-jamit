@@ -16,7 +16,7 @@ Visual Studio 2013 or 2010をインストールする．（2015では動かな�
 
 CUDAをダウンロードしインストールする  
 <https://developer.nvidia.com/cuda-toolkit-archive>
-* バックエンドにTensorFlowを使う場合CUDA 8.0選択
+* バックエンドにTensorFlowを使う場合CUDA 9.0選択
 * バックエンドにTheanoを使う場合CUDA 7.5を選択
 
 Git for Windowsをダウンロードしインストールする  
@@ -49,7 +49,7 @@ conda install numpy scipy mingw libpython spyder
 ```bash
 pip install tensorflow-gpu
 ```
-*バックエンドにTensorFlowを使う場合は* NVIDIAのサイトからcuDNN v6.0 for CUDA 8.0をダウンロードし，bin,include,lib内のファイルをCUDAインストール先ディレクトリ（おそらくC:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0）にコピーする．cuDNNのダウンロードには会員登録が必要．  
+*バックエンドにTensorFlowを使う場合は* NVIDIAのサイトからcuDNN v7.1.4 for CUDA 9.0をダウンロードし，bin,include,lib内のファイルをCUDAインストール先ディレクトリ（おそらくC:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.0）にコピーする．cuDNNのダウンロードには会員登録が必要．  
 <https://developer.nvidia.com/cudnn>
 
 *バックエンドにTheanoを使う場合は* インストールする
@@ -90,11 +90,11 @@ Kerasを使ったコードを何か1回実行する
 ```bash
 python keras_cnn_imageclassify.py
 ```
-実行後にC:\Users\（ユーザ名）\.keras\keras.jsonをテキストエディタで開き，バックエンドの指定を書く．
+実行後にC:\Users\（ユーザ名）\.keras\keras.jsonをテキストエディタで開き，バックエンドの指定を書く．Tensorflowを使う場合は
 ```bash
 "backend": "tensorflow"
 ```
-または
+またはTheanoを使う場合は
 ```bash
 "backend": "theano"
 ```
